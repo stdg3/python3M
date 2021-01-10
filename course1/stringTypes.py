@@ -36,3 +36,4 @@ print("Hello, {}. You are learning {}".format("A", "Python"))
 
 #String length:
 print(len("7 chars"))
+

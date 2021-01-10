@@ -10,3 +10,4 @@ print("My name is {}".format(None))
 #Casting to other types:
 print(str(None))
 print(bool(None))
+
