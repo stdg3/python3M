@@ -23,7 +23,7 @@ print("name is {}".format(thisIsDict.get("name",
 ) #get'te aranan anahtar bulunmazsa mesela defName gibi sonuçta hata döndürmez prog çatlamaz None döner
 print("keys:",thisIsDict.keys())
 print("values:",thisIsDict.values())
-print("len:",len(thisIsDict)) # key kadar döner
+print("len:",len(thisIsDict)) # keys kadar döner
 
 for x in thisIsDict:
 	print(x, thisIsDict[x])
