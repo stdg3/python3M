@@ -21,3 +21,24 @@ class DictFunctionality(object):
 	def __delitem__(self, key):
 		del self.values[key]
 	
+	#Iterations
+	def __iter__(self):
+		return iter(self.values)
+	
+	#"in" operations:
+	def __contains__(self,item):
+		return item in self.values
+	
+	def __len__(self):
+		return len(self.values)
+
+if __name__ == "__main__":
+	l = DictFunctionality({"1key": "someValue"})
+	l[1] = "item1"
+	print(str(l), l[1])
+
+	for item in l:
+		print(item, l[item])
+	
+	print("s" in l, 1 in l)
+	print(len(l))
